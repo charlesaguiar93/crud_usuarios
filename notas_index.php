@@ -83,8 +83,8 @@ $relatorio = mysqli_fetch_all($res_lista, MYSQLI_ASSOC);
     </div>
 </div>
 
-<?= isset($_GET['msg']) && $_GET['msg'] === 'excluido' ? '<p class="text-success">Nota excluída com sucesso!</p>' : '' ?>
-<?= isset($_GET['msg']) && $_GET['msg'] === 'atualizado' ? '<p class="text-success">Nota atualizada com sucesso!</p>' : ''?> 
+<?= isset($_GET['msg']) && $_GET['msg'] === 'excluido' ? '<p class="text-success text-uppercase"><strong>Aluno excluído com sucesso!</strong></p>' : '' ?>
+<?= isset($_GET['msg']) && $_GET['msg'] === 'atualizado' ? '<p class="text-success text-uppercase"><strong>Nota atualizada com sucesso!</strong></p>' : ''?> 
     
 <table class="table table-bordered table-striped">
         <thead class="table-dark">

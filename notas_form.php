@@ -62,7 +62,7 @@ $result_usuarios = $conn->query($sql_usuarios);
                     <!-- Faltas -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Faltas:</label>
-                        <input type="number" name="faltas" class="form-control" value="0" min="0">
+                        <input type="text" name="faltas" class="form-control" value="0" min="0">
                     </div>
                 </div>
 
@@ -70,20 +70,20 @@ $result_usuarios = $conn->query($sql_usuarios);
                     <!-- Notas -->
                     <div class="col-md-3 mb-3">
                         <label class="form-label">Nota 1:</label>
-                        <input type="number" name="nota1" class="form-control" step="0.01" min="0" max="10" required>
+                        <input type="text" name="nota1" class="form-control" step="0.01" min="0" max="10" required>
                     </div>
                     <div class="col-md-3 mb-3">
                         <label class="form-label">Nota 2:</label>
-                        <input type="number" name="nota2" class="form-control" step="0.01" min="0" max="10" required>
+                        <input type="text" name="nota2" class="form-control" step="0.01" min="0" max="10" required>
                     </div>
                     <div class="col-md-3 mb-3">
                         <label class="form-label">Nota 3:</label>
-                        <input type="number" name="nota3" class="form-control" step="0.01" min="0" max="10" required>
+                        <input type="text" name="nota3" class="form-control" step="0.01" min="0" max="10" required>
                     </div>
                     <!-- Peso -->
                     <div class="col-md-3 mb-3">
                         <label class="form-label">Peso:</label>
-                        <input type="number" name="peso" class="form-control" step="0.01" value="1.00">
+                        <input type="text" name="peso" class="form-control" step="0.01" value="1.00">
                     </div>
                 </div>
 
@@ -97,6 +97,6 @@ $result_usuarios = $conn->query($sql_usuarios);
         </div>
     </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
