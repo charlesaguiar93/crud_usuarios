@@ -11,7 +11,7 @@ $faltas = $_POST['faltas'];
 $regexnum =  "/^[0-9]+(\.[0-9]{1,2})?$/"; // Aceita números inteiros ou decimais com até 2 casas (para notas e peso)
 $regexfaltas = "/^\d+$/"; // Aceita apenas números inteiros para faltas
 
-/* Validação dos inputs  */
+/* Validação dos inputs do formulário */
 if (!preg_match($regexnum, $nota1) || !preg_match($regexnum, $nota2) || !preg_match($regexnum, $nota3) || !preg_match($regexnum, $peso ) || !preg_match($regexfaltas, $faltas)) {
     echo "<script>alert('Erro: Por favor, insira valores numéricos válidos.'); window.history.back();</script>";/* window.history.back() faz o redirecionamento para a página anterior */
     exit();

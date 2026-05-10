@@ -34,12 +34,24 @@ $relatorio = mysqli_fetch_all($res_lista, MYSQLI_ASSOC);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container mt-5">
+<form class="form-inline my-3" method="GET" action="resultados.php" style="max-width: 600px; margin: auto;">
+    <input type="text" name="busca_nome" class="form-control mr-2" placeholder="Nome do aluno...">
+        
+    <select name="busca_bimestre" class="form-control mr-2">
+    <option value="">Todos os Bimestres</option>
+    <option value="1º Bimestre">1º Bimestre</option>
+    <option value="2º Bimestre">2º Bimestre</option>
+    <option value="3º Bimestre">3º Bimestre</option>
+    <option value="4º Bimestre">4º Bimestre</option>
+</select>
+   <br> <button type="submit" class="btn btn-primary">Filtrar</button><br>
+</form>
 
     <h2 class="mb-4">Relatório de Notas e Situação</h2>
 
    
     <h2 class="mb-4">Relatório de Notas</h2>
-
+ 
    
     <div class="row mb-4">
     <!-- Total de Lançamentos -->

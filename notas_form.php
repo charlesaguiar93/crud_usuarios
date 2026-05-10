@@ -25,6 +25,10 @@ $result_usuarios = $conn->query($sql_usuarios);
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
+<!-- O formulário envia os dados para resultado.php -->
+
+
+
 
 <div class="container mt-5">
     <div class="card shadow">
