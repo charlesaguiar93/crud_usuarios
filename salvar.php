@@ -1,7 +1,7 @@
 <?php
 include 'conexao.php';
 
-mysqli_query($conn, "INSERT INTO usuarios(nome,email,telefone,idade,cidade,curso) 
+mysqli_query($conn, "INSERT INTO usuars(nome,email,telefone,idade,cidade,curso) 
 VALUES (
   '$_POST[nome]',
   '$_POST[email]',

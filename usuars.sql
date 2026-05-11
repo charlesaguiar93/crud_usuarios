@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 -- 1. Cria a tabela de usuários primeiro
-CREATE TABLE `usuarios` (
+CREATE TABLE `usuars` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(150) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
@@ -51,14 +51,14 @@ CREATE TABLE `notas_alunos` (
   `faltas` INT DEFAULT 0,
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_aluno_usuario` FOREIGN KEY (`aluno_id`) REFERENCES `usuarios` (`id`)
+  CONSTRAINT `fk_aluno_usuario` FOREIGN KEY (`aluno_id`) REFERENCES `usuars` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `usuarios`
+-- Despejando dados para a tabela `usuars`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `telefone`, `idade`, `cidade`, `curso`) VALUES
+INSERT INTO `usuars` (`id`, `nome`, `email`, `telefone`, `idade`, `cidade`, `curso`) VALUES
 (1, 'Carlos', 'carlos@email.com', '454875487', 35, 'teste', 'ads'),
 (4, 'Teste2', 'teste2@teste.com', '5454545454', 35, 'teste2', 'ads'),
 (11, 'teste', 'teste@email.com', '4798989898', 25, 'joinville', 'ads');
@@ -68,8 +68,8 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `telefone`, `idade`, `cidade`, `c
 --
 
 --
--- Índices de tabela `usuarios`
-/* ALTER TABLE `usuarios`
+-- Índices de tabela `usuars`
+/* ALTER TABLE `usuars`
   ADD PRIMARY KEY (`id`); */
 
 
@@ -78,8 +78,8 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `telefone`, `idade`, `cidade`, `c
 --
 
 --
--- AUTO_INCREMENT de tabela `usuarios`
-/* ALTER TABLE `usuarios`
+-- AUTO_INCREMENT de tabela `usuars`
+/* ALTER TABLE `usuars`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT; */
 

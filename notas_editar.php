@@ -14,7 +14,7 @@ if (!$id) {
 // inner join para pegar o nome do aluno junto com os dados da nota (para mostrar no campo de aluno, que é readonly)
 $sql = "SELECT n.*, u.nome 
         FROM notas_alunos n 
-        INNER JOIN usuarios u ON n.aluno_id = u.id 
+        INNER JOIN usuars u ON n.aluno_id = u.id 
         WHERE n.id = '$id'";
 
 $res = mysqli_query($conn, $sql);

@@ -11,8 +11,8 @@ $db   = "crud_smpls";
 $conn = new mysqli($host, $user, $pass, $db);
 
 // 2. Busca os usuários para o Select
-$sql_usuarios = "SELECT id, nome FROM usuarios ORDER BY nome ASC";
-$result_usuarios = $conn->query($sql_usuarios);
+$sql_usuars = "SELECT id, nome FROM usuars ORDER BY nome ASC";
+$result_usuars = $conn->query($sql_usuars);
 ?>
 <a href="form.php" class="btn btn-secondary">Adicionar Aluno</a>
 
@@ -45,7 +45,7 @@ $result_usuarios = $conn->query($sql_usuarios);
                     <label class="form-label">Aluno:</label>
                     <select name="aluno_id" class="form-select" required>
                         <option value="">Selecione o aluno...</option>
-                        <?php while($row = $result_usuarios->fetch_assoc()): ?>
+                        <?php while($row = $result_usuars->fetch_assoc()): ?>
                             <option value="<?= $row['id'] ?>"><?= $row['nome'] ?></option>
                         <?php endwhile; ?>
                     </select>

@@ -9,7 +9,7 @@ $idade = $_POST['idade'];
 $cidade = $_POST['cidade'];
 $curso = $_POST['curso'];
 
-$sql = "UPDATE usuarios SET 
+$sql = "UPDATE usuars SET 
   nome='$nome',
   email='$email',
   telefone='$telefone',

@@ -9,7 +9,7 @@ include 'includes/header.php';
 
 $id = $_GET['id'];
 
-$res = mysqli_query($conn, "SELECT * FROM usuarios WHERE id = $id");
+$res = mysqli_query($conn, "SELECT * FROM usuars WHERE id = $id");
 $dados = mysqli_fetch_assoc($res);
 ?>
 

@@ -32,7 +32,7 @@ include 'includes/header.php';
   </tr>
 
 <?php
-$res = mysqli_query($conn, "SELECT * FROM usuarios");
+$res = mysqli_query($conn, "SELECT * FROM usuars");
 
 while ($r = mysqli_fetch_assoc($res)){
   echo "<tr>

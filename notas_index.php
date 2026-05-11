@@ -19,7 +19,7 @@ $resumo = mysqli_fetch_assoc($res_resumo);
 // Busca a lista para a tabela de notas.
 $sql = "SELECT n.id, u.nome, n.bimestre, n.nota1, n.nota2, n.nota3, n.peso, n.faltas
         FROM notas_alunos n 
-        INNER JOIN usuarios u ON n.aluno_id = u.id";
+        INNER JOIN usuars u ON n.aluno_id = u.id";
 $res_lista = mysqli_query($conn, $sql);
 // O fetch_all pega todas as linhas de uma vez
 $relatorio = mysqli_fetch_all($res_lista, MYSQLI_ASSOC);

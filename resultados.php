@@ -10,7 +10,7 @@ $faltas = $_GET['busca_faltas'] ?? '';
 
 // 2. Monta a SQL dinâmica
 $sql = "SELECT n.*, u.nome FROM notas_alunos n 
-        INNER JOIN usuarios u ON n.aluno_id = u.id 
+        INNER JOIN usuars u ON n.aluno_id = u.id 
         WHERE 1=1 "; /* O "WHERE 1=1" é um truque para facilitar a adição de condições com AND depois */
   
 
